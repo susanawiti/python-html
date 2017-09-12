@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>Family</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="icon" href="../../favicon.ico">
+
+  <!--  <title>My Family Members</title>-->
+
+    <!-- Bootstrap core CSS -->
+  <!--  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+  <!--  <link href="starter-template.css" rel="stylesheet">-->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!--  <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/8D849C01-6673-2342-9A66-1EF4C88A736B/main.js" charset="UTF-8"></script><script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+  <!--    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+  <!--  <![endif]-->
+   
+  <!--  </style>-->
+    <body>
+    <div class="container">
+    <div class="row">
+         <h1>My Family Members</h1>
+    <div class="table table-responsive">
+      <table class="table-bordered col-m-24">
+        </head>
+
+        <tr>
+            <th>Names</th>
+            <th>Description</th>
+            <th>title</th>
+        </tr>
+
+
+      {% autoescape off %}
+        <tr>
+           <td>{{family.names}}</td>
+           <td>{{family.description}}</td>
+           <td>{{family.title}}</td>
+        </tr>
+      {% endautoescape %}
+      </table>
+      </div>
+      </div>
+    </div>
+                
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   </body>
+</html>
